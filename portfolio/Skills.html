@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333; /* Normal text color */
+            background-color: #e5dcdc; /* Brown background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+            color: #000; /* Black text for contrast */
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6d4c41; /* Brown color */
+        }
+
+        .logo span {
+            color: #181818; /* Light brown */
+        }
+
+        .links a {
+            color: #000; /* Black text for links */
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            color: #a5a5a5; /* Dark white on hover */
+            transform: scale(1.1); /* Slightly enlarge the link on hover */
+        }
+
+        /* Highlighted About Me section */
+        .about-section {
+            background: linear-gradient(to bottom, #6d4c41, #4b2e2e); /* Light to dark brown */
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .about-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-section p {
+            background-color: #fff; /* Full white background */
+            color: #333; /* Dark gray text for better readability */
+            border-radius: 10px; /* Rounded corners */
+            padding: 1rem; /* Padding for spacing */
+            font-size: 1.5rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main content below */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            padding: 2rem;
+            background: #5d4037; /* Medium brown */
+            text-align: center;
+        }
+
+        .main-container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        strong {
+            color: #333; /* Normal text color */
+        }
+
+        em {
+            color: #333; /* Normal italicized text */
+            font-style: italic;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: auto; /* Push footer to bottom */
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: flex-end; /* Align links to the right */
+            align-items: center;
+            padding: 1rem;
+            background-color: #3e2723; /* Dark brown background */
+            width: 100%; /* Ensure it takes full width */
+        }
+
+        .footer-links a {
+            color: #fff; /* White text for footer links */
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #a5a5a5; /* Dark white on hover */
+            transform: scale(1.1); /* Slightly enlarge the link on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Rayala <span>Laahiri</span></div>
+                <div class="links">
+                    <a href="index.html" aria-label="Home Page">Home</a>
+                    <a href="about.html" aria-label="About Page">About</a>
+                    <a href="skills.html" aria-label="Skills Page">Skills</a>
+                    <a href="service.html" aria-label="Services Page">Services</a>
+                    <a href="projects.html" aria-label="Projects Page">Projects</a>
+                    <a href="accomplishments.html" aria-label="Accomplishments Page">Accomplishments</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>About Me</h1>
+            <p>
+                I am <strong>R. Laahiri</strong>, passionate about <em>learning and developing innovative software solutions</em>.
+                With expertise in <strong>web development, JavaScript, OOP, HTML, and Python Django</strong>, I strive to make an impact through <em>creative problem-solving and teamwork</em>.
+            </p>
+        </section>
+        <section class="main-container">
+            <p>
+                Welcome to my portfolio! Here you will find detailed information about my skills, projects, and accomplishments. 
+                My goal is to contribute to impactful projects that solve real-world problems while growing as a professional in the tech industry.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="service.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="accomplishments.html">Accomplishments</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

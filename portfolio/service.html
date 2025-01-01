@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        nav {
+            background-color: #ffffff; /* White navbar */
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: right; /* Align navbar content to the right */
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo span {
+            color: #00bcd4;
+        }
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333; /* Dark text for contrast */
+            font-size: 14px;
+        }
+        .contact-btn a {
+            background-color: #00bcd4;
+            padding: 8px 15px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            flex: 1;
+            max-width: 500px;
+            margin: 20px;
+        }
+        .content h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .content h1 span {
+            color: #00bcd4;
+        }
+        .content ul {
+            list-style-type: disc;
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .content ul li {
+            font-size: 16px;
+            margin: 8px 0;
+            color: #555;
+        }
+        .image {
+            flex: 1;
+            max-width: 500px;
+            margin: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #ffffff; /* White footer */
+            padding: 10px 20px;
+            text-align: right; /* Align footer content to the right */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Rayala<span>Laahiri</span></div>
+            <div class="links">
+                <a href="index.html" aria-label="Index Page">Home</a>
+                <a href="about.html" aria-label="About Page">About</a>
+                <a href="skills.html" aria-label="Skills Page">Skills</a>
+                <a href="service.html" aria-label="Service Page">Services</a>
+                <a href="projects.html" aria-label="Projects Page">Projects</a>
+                <a href="accomplishments.html" aria-label="Accomplishments Page">Accomplishments</a>
+            </div>
+            <div class="contact-btn">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="main-container">
+        <div class="content">
+            <h1>Our <span>Services</span></h1>
+            <p>We offer a wide range of professional services to meet your needs:</p>
+            <ul>
+                <li>Web Development</li>
+                <li>JavaScript Expertise</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>HTML & CSS Design</li>
+                <li>Python Django Development</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="images/logo.png" alt="Professional Services">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Rayala Laahiri. All rights reserved.</p>
+    </footer>
+</body>
+</html>

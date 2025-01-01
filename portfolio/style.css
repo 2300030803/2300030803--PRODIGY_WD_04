@@ -1,0 +1,189 @@
+/* Updated styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+    transition: background 0.3s ease; /* Smooth transition for background on hover */
+}
+
+/* Navbar Styling */
+nav {
+    width: 100%;
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: rgb(109, 67, 0);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s, transform 0.3s ease; /* Add transform on hover */
+}
+
+.links a:hover {
+    color: rgb(109, 67, 0);
+    transform: translateY(-3px); /* Hover effect: lift the link slightly */
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(109, 67, 0);
+    transition: width 0.3s;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+.contact-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(109, 67, 0);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: rgb(109, 67, 0);
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: rgb(109, 67, 0);
+    color: white;
+    transform: scale(1.05); /* Slightly scale the button */
+}
+
+.contact-btn:hover a {
+    color: white;
+}
+
+/* Main Content Styling */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    padding: 2rem;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease; /* Smooth transition for container on hover */
+}
+
+.main-container:hover {
+    transform: scale(1.05); /* Hover effect on the whole main container */
+}
+
+.main-container .content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.content h1 span {
+    color: rgb(109, 67, 0);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
+}
+
+.content ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.content ul li {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for images */
+.image img:hover {
+    transform: scale(1.05); /* Slight zoom on image hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburg {
+        display: block;
+    }
+
+    .content ul {
+        padding-left: 0;
+    }
+
+    .image {
+        margin-top: 2rem;
+    }
+}
